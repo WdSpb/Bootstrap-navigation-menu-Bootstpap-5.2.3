@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container-fluid">
+				<a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+				
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+						<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<!-- Search Wrapper -->
+				<div class="search-wrapper d-none d-lg-flex">
+						<!-- Search Input Container -->
+						<div class="search-input-container">
+								<form id="search-form" method="POST" action="search.php">
+										<input class="search-input" type="search" name="query" placeholder="Search" aria-label="Search" autocomplete="off">
+								</form>
+						</div>
+						
+						<!-- Search Toggle Button -->
+						<button class="search-toggle-btn" type="button" id="search-btn">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+										<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" fill="white"/>
+								</svg>
+						</button>
+				</div>
+
+				<div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+						<div class="offcanvas-header">
+								<h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+								<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+						</div>
+						<div class="offcanvas-body">
+								<ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+										<li class="nav-item">
+												<a class="nav-link active" aria-current="page" href="#">Home</a>
+										</li>
+										<li class="nav-item">
+												<a class="nav-link" href="#">Link</a>
+										</li>
+										<li class="nav-item dropdown">
+												<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+														Dropdown
+												</a>
+												<ul class="dropdown-menu dropdown-menu-dark animate slideIn">
+														<li><a class="dropdown-item" href="#">Action</a></li>
+														<li><a class="dropdown-item" href="#">Another action</a></li>
+														<li>
+																<hr class="dropdown-divider">
+														</li>
+														<li><a class="dropdown-item" href="#">Something else here</a></li>
+												</ul>
+										</li>
+								</ul>
+								<!-- Mobile Search Form -->
+								<form class="d-flex d-lg-none mt-3 mt-lg-0" method="POST" action="search.php" role="search">
+										<input class="form-control me-2" type="search" name="query" placeholder="Search" aria-label="Search">
+										<button class="btn btn-success" type="submit">Search</button>
+								</form>
+						</div>
+				</div>
+		</div>
+</nav>
